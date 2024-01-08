@@ -31,6 +31,10 @@
 2. 根據節點列表，交叉計算出匹配度最高的關係列表
 3. 最後再通過關係列表得出匹配度最高的10個節點
 
+#### JDBC
+
+我使用MyBatis替代Java原生的JDBC，MyBatis與原生JDBC方法不同，不需要進行Connection等複雜的綫性流程操作，也不需要擔心SQL注入問題，MyBatis是使用XML文件將Java方法與SQL語句結合，XML語句包含原生SQL語句格式及與之對應的Java對象與方法，而在Java方面只需要定義接口，實現部分就由XML側實現
+
 #### Test
 
 使用Junit添加單步測試和系統測試，也就是在BLImpl和Controller層添加測試用例
